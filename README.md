@@ -42,6 +42,10 @@ For this laboratory work I decided to create a Landing Page for a madeup website
 - **Contact Section**: Offers ways to get in touch for support, including phone and email contact, plus a contact form.
 ![contact](readme_img/contact.png)
 
+### Conclusion 
+
+In conclusion, this laboratory work allowed me to understand what a Landing Page is and what it's structure should be.
+
 ### Live Demo
 
 **Github Pages Link:** https://bostan-victor.github.io/tum-web-lab2/ 
