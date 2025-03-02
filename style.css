@@ -103,6 +103,29 @@
     }
 }
 
+/* Mobile-Only Section */
+.mobile-only {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background: #56C1E1;
+    color: #333;
+    margin-top: 20px;
+}
+
+.mobile-only .btn {
+    background: #0077ff;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Hide Mobile-Only Elements on Desktop */
+@media (min-width: 769px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
 /* Navbar Styles */
 
 .navbar {
