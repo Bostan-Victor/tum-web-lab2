@@ -1,3 +1,131 @@
+/* Responsive Design - Mobile Styles */
+
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .navbar .logo {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .navbar .play-now {
+        margin-top: 10px;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    /* Features Section */
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        margin-bottom: 20px;
+    }
+
+    /* CTA Section */
+    #cta .container {
+        padding: 20px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-buttons .btn {
+        width: 80%;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        margin-bottom: 20px;
+    }
+
+    /* FAQ Section */
+    .faq-item {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .faq-question {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .faq-answer {
+        font-size: 0.9rem;
+    }
+
+    /* Contact Section */
+    .contact-form input,
+    .contact-form textarea {
+        width: 90%;
+    }
+}
+
+/* Mobile-Only Section */
+.mobile-only {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background: #56C1E1;
+    color: #333;
+    margin-top: 20px;
+}
+
+.mobile-only .btn {
+    background: #0077ff;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Hide Mobile-Only Elements on Desktop */
+@media (min-width: 769px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
 /* Navbar Styles */
 
 .navbar {
@@ -68,7 +196,7 @@
 /* HERO */
 
 .hero {
-    background: url('img/hero-bg.jpg') center/cover no-repeat;
+    background: url('img/hero-bg.png') center/cover no-repeat;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -369,74 +497,58 @@
 #contact {
     background: #f8f9fa;
     color: #333;
-    padding: 60px 20px;
+    padding: 40px 20px; 
     text-align: center;
 }
 
 #contact .container {
-    max-width: 1100px;
+    max-width: 800px; 
     margin: 0 auto;
 }
 
 #contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
+    font-size: 2rem; 
+    margin-bottom: 10px;
     font-weight: bold;
     color: #0077ff;
 }
 
 #contact p {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-}
-
-.contact-method {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-}
-
-.contact-method h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #0077ff;
-}
-
-.contact-method p {
     font-size: 1rem;
+    margin-bottom: 20px;
     color: #555;
 }
 
+.contact-method {
+    margin-bottom: 15px;
+}
+
+.contact-method h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.contact-method p {
+    font-size: 0.9rem;
+    color: #444;
+}
+
 .contact-form {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 8px; 
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .contact-form button {
-    padding: 12px 24px;
-    font-size: 1.2rem;
-    color: white;
-    background: #0077ff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.contact-form button:hover {
-    background: #005ecc;
+    padding: 10px 20px;
+    font-size: 1rem;
 }
